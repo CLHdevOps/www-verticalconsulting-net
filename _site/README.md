@@ -2,7 +2,7 @@
 All script and media files required for my business website.  
 All content ideas, elements, structure, and implementation are licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html). Third parties may *NOT* copy or otherwise imitate content for commercial purposes or for profit. 
 ## Status
-- As of 10/28/2022: Deployed on [Netlify](https://www.dreslinconsult.com/)
+- As of 10/28/2022: Deployed on [Netlify](https://www.Hughesconsult.com/)
 ## Website Structure
 1. Index
 2. About
@@ -79,7 +79,7 @@ To view and edit code:
 5. Double click saved file or refresh web browser for changes to take effect.
 ### GitHub
 ***
-- [Repo Link](https://github.com/bdreslin02/www-dreslin-consulting)
+- [Repo Link](https://github.com/bHughes02/www-Hughes-consulting)
 1. Follow link.
 2. Fork project to your own Git account.
 3. Create a pull request. 
