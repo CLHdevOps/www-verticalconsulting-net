@@ -1,0 +1,36 @@
+# Site settings
+title: Vertical Consulting LLC
+email: corey@5hughes.com
+description: >-
+  Professional technology consulting services for businesses of all sizes.
+  Specializing in cloud infrastructure, digital transformation, and enterprise solutions.
+baseurl: ""
+url: "https://www.verticalconsulting.net"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Collections
+collections: {}
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
