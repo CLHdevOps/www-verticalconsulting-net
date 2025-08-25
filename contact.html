@@ -1,26 +1,15 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Contact &#124; Vertical Consulting LLC</title>
 <meta charset="utf-8">
+<title>Contact &#124; Vertical Consulting LLC</title>
 <meta name="description" content="Contact Vertical Consulting LLC for professional technology consulting services">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="images/logo-colored.svg" type="image/x-icon">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,700&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&family=Roboto+Serif:opsz,wght@8..144,700&family=Roboto&family=Roboto:wght@300&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/9ee1123c89.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
 </head>
@@ -68,32 +57,32 @@
 					<div class="row input-container">
 						<div class="col-md-6 col-sm-12">
 							<div class="styled-input">
-								<input type="text" name="first_name" required />
-								<label>First name&#42;</label> 
+								<input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required />
+								<label for="first_name">First name&#42;</label>
 							</div>
 						</div>
 						<div class="col-md-6 col-sm-12">
 							<div class="styled-input" style="float:right;">
-								<input type="text" name="last_name" required />
-								<label>Last name&#42;</label> 
+								<input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required />
+								<label for="last_name">Last name&#42;</label>
 							</div>
 						</div>
 						<div class="col-xs-12">
 							<div class="styled-input wide">
-								<input type="email" name="email" required />
-								<label>Email&#42;</label> 
+								<input type="email" id="email" name="email" placeholder="Enter your email address" required />
+								<label for="email">Email&#42;</label>
 							</div>
 						</div>
 						<div class="col-xs-12">
 							<div class="styled-input wide">
-								<input type="text" name="company" required />
-								<label>Company Name&#42;</label>
+								<input type="text" id="company" name="company" placeholder="Enter your company name" required />
+								<label for="company">Company Name&#42;</label>
 							</div>
 						</div>
 						<div class="col-xs-12">
 							<div class="styled-input wide">
-								<textarea name="comments" required></textarea>
-								<label>Project details, technology requirements, or consultation request...</label>
+								<textarea id="comments" name="comments" placeholder="Project details, technology requirements, or consultation request..." required></textarea>
+								<label for="comments">Message&#42;</label>
 							</div>
 						</div>
 						<div class="col-xs-12">
