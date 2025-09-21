@@ -481,7 +481,7 @@ nav a.current {
 	width: 120px;
 	border-radius: 50%;
 	border: 5px solid var(--clr-neutral-100);
-	background: no-repeat center/cover url(images/headshot.png);
+	background: no-repeat center/cover url(images/jeff-law.png);
 	position: absolute;
 	top: -65%;
 	left: 50%;
@@ -541,6 +541,7 @@ nav a.current {
 	text-align: center;
 	transition: transform 0.4s;
 	box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+	-webkit-user-select: none;
 	user-select: none;
 	cursor: pointer;
 }

@@ -5,6 +5,39 @@ $(function(){
       }
     });
 });
+
+// DEBUG: Logo replacement validation
+console.log('=== LOGO REPLACEMENT DEBUG ===');
+console.log('Current logo src attributes found:');
+
+// Find all img tags with logo references
+document.querySelectorAll('img[src*="logo"]').forEach((img, index) => {
+    console.log(`Logo ${index + 1}:`, img.src, '- Alt:', img.alt);
+});
+
+// Check if the new logo file exists
+const testImage = new Image();
+testImage.onload = function() {
+    console.log('✓ SUCCESS: vertical-v-only-logo.png loads successfully');
+    console.log('Image dimensions:', this.width + 'x' + this.height);
+};
+testImage.onerror = function() {
+    console.log('✗ ERROR: vertical-v-only-logo.png failed to load');
+};
+testImage.src = 'images/vertical-v-only-logo.png';
+
+// Check if old logo file exists
+const oldImage = new Image();
+oldImage.onload = function() {
+    console.log('✓ Old logo-transparent.svg loads successfully');
+    console.log('SVG dimensions:', this.width + 'x' + this.height);
+};
+oldImage.onerror = function() {
+    console.log('✗ Old logo-transparent.svg failed to load');
+};
+oldImage.src = 'images/logo-transparent.svg';
+
+console.log('=== END LOGO DEBUG ===');
 function reveal() {
   var reveals = document.querySelectorAll(".reveal");
 

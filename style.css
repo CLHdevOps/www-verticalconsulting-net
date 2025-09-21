@@ -476,17 +476,16 @@ nav a.current {
 	font-size: 18px;
 }
 .image {
-	background-color:tomato;
 	height: 125px;
 	width: 120px;
 	border-radius: 50%;
 	border: 5px solid var(--clr-neutral-100);
-	background: no-repeat center/cover url(images/headshot.png);
 	position: absolute;
 	top: -65%;
 	left: 50%;
 	transform: translateX(-50%);
 	display: flex;
+	overflow: hidden;
 }
 .footer {
 	background-color: var(--clr-primary-900);

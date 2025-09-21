@@ -481,7 +481,7 @@ nav a.current {
 	width: 120px;
 	border-radius: 50%;
 	border: 5px solid var(--clr-neutral-100);
-	background: no-repeat center/cover url(images/headshot.png);
+	background: no-repeat center/cover url(images/integraconnect.png);
 	position: absolute;
 	top: -65%;
 	left: 50%;
