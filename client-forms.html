@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Client Forms &#124; Vertical Consulting LLC</title>
+<meta name="description" content="Download forms and upload documents for your Vertical Consulting LLC projects">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/vertical-v-only-logo.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&family=Roboto+Serif:opsz,wght@8..144,700&family=Roboto&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9ee1123c89.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+<style>
+	.forms-section {
+		margin-bottom: 4rem;
+	}
+	.form-card {
+		background: var(--clr-accent-200);
+		border: 1px solid var(--clr-accent-300);
+		border-radius: 8px;
+		padding: 1.5rem;
+		margin-bottom: 1.5rem;
+		transition: transform 0.2s ease, box-shadow 0.2s ease;
+	}
+	.form-card:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+	}
+	.form-card h3 {
+		color: var(--clr-primary-900);
+		margin-bottom: 0.5rem;
+	}
+	.form-card p {
+		color: var(--clr-accent-400);
+		margin-bottom: 1rem;
+	}
+	.download-btn {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		background: var(--clr-primary-900);
+		color: var(--clr-neutral-100);
+		padding: 0.75rem 1.5rem;
+		text-decoration: none;
+		border-radius: 4px;
+		transition: background 0.2s ease;
+	}
+	.download-btn:hover {
+		background: var(--clr-primary-300);
+		color: var(--clr-primary-900);
+	}
+	.iframe-container {
+		width: 100%;
+		max-width: 800px;
+		margin: 2rem auto;
+		border: 2px solid var(--clr-accent-300);
+		border-radius: 8px;
+		overflow: hidden;
+	}
+	.setup-notice {
+		background: #fff3cd;
+		border: 1px solid #ffc107;
+		border-radius: 4px;
+		padding: 1rem;
+		margin-bottom: 2rem;
+	}
+	.setup-notice h4 {
+		color: #856404;
+		margin-bottom: 0.5rem;
+	}
+	.setup-notice p {
+		color: #856404;
+		margin-bottom: 0;
+	}
+</style>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<img src="images/vertical-v-only-logo.png" height="55" width="55" alt="Vertical Consulting LLC Logo">
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="services.html" class="nav-link">Services</a>
+				</li>
+				<li class="nav-item">
+					<a href="projects.html" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="client-forms.html" class="nav-link">Client Forms</a>
+				</li>
+				<li class="nav-item">
+					<button class="button button1 navbutton1 nav-link" onclick="window.location.href='contact.html'">CONTACT</button>
+				</li>
+			</ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<!-- Download Forms Section -->
+		<section class="bg-light forms-section">
+			<div class="container container--margin--short load-in">
+				<h1 class="heading-thin text-center">Client Forms</h1>
+				<p class="text-center">Download required forms and upload completed documents for your project.</p>
+
+				<hr>
+
+				<h2 class="heading-thin">Download Forms</h2>
+				<p>Download and complete these forms for your project engagement:</p>
+
+				<!-- Form Card 1 -->
+				<div class="form-card reveal">
+					<h3>AI Process Review Questionnaire</h3>
+					<p>Complete this questionnaire to help us understand your current business processes and identify opportunities for AI automation and optimization.</p>
+					<a href="forms/Vertical_AI_Process_Review_Questionnaire.pdf" class="download-btn" download>
+						<i class="fa-solid fa-download"></i>
+						Download PDF
+					</a>
+				</div>
+
+				<!-- Form Card 2 -->
+				<div class="form-card reveal">
+					<h3>AI Services and Pricing Guide</h3>
+					<p>Review our comprehensive AI consulting services, implementation options, and transparent pricing structure for your business transformation.</p>
+					<a href="forms/Vertical_AI_Services_and_Pricing.pdf" class="download-btn" download>
+						<i class="fa-solid fa-download"></i>
+						Download PDF
+					</a>
+				</div>
+
+				<!-- Form Card 3 -->
+				<div class="form-card reveal">
+					<h3>SEO Pricing Proposal</h3>
+					<p>Explore our search engine optimization services and pricing options to improve your online visibility and drive organic traffic growth.</p>
+					<a href="forms/MercyHouse_SEO_Pricing_Proposal_Branded_Final.pdf" class="download-btn" download>
+						<i class="fa-solid fa-download"></i>
+						Download PDF
+					</a>
+				</div>
+
+				<!-- Instructions to add more forms -->
+				<!-- To add more forms:
+				1. Add your PDF/DOC file to the /forms/ directory
+				2. Copy one of the form-card divs above
+				3. Update the title, description, and href link
+				4. Commit and push changes
+				-->
+			</div>
+		</section>
+
+		<!-- Upload Forms Section -->
+		<section class="forms-section">
+			<div class="container container--margin--short">
+				<h2 class="heading-thin text-center">Upload Completed Forms</h2>
+				<p class="text-center">Submit your completed forms and project documents using the form below.</p>
+
+				<!-- Google Form Embed Container -->
+				<div class="iframe-container reveal">
+					<iframe
+						src="https://docs.google.com/forms/d/e/1FAIpQLSeXj5aJFZZtyRLWvuNDrHkMpv9FKVBzKzKsCfVjnMlq7GpMpw/viewform?embedded=true"
+						width="100%"
+						height="800"
+						frameborder="0"
+						marginheight="0"
+						marginwidth="0"
+						title="Client Form Upload">
+						Loading…
+					</iframe>
+				</div>
+
+				<!-- Alternative: If you prefer a simple message instead of blank iframe -->
+				<!--
+				<div class="reveal" style="text-align: center; padding: 3rem; background: var(--clr-accent-200); border-radius: 8px;">
+					<i class="fa-solid fa-upload" style="font-size: 3rem; color: var(--clr-primary-900); margin-bottom: 1rem;"></i>
+					<h3>Form Upload Coming Soon</h3>
+					<p>We're setting up a secure form upload system. Please email completed forms to <a href="mailto:corey@5hughes.com">corey@5hughes.com</a> in the meantime.</p>
+				</div>
+				-->
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer>
+		<ul>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="press.html">Press</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="imprint.html">Imprint</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="privacy.html">Privacy Policy</a>
+			</li>
+		</ul>
+		<p class="copyright">
+			Copyright &copy; 2024 Vertical Consulting LLC
+		</p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
