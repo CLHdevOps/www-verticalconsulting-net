@@ -1,11 +1,13 @@
 # Git Commit and PR Workflow
 
 ## Overview
+
 This workflow automates the process of testing commits, staging changes, creating commits, and submitting pull requests to sync changes with the repository.
 
 ## Workflow Steps
 
 ### 1. Pre-Commit Testing
+
 ```bash
 # Run tests and linting
 npm test
@@ -13,6 +15,7 @@ npm run lint
 ```
 
 ### 2. Stage Changes
+
 ```bash
 # Add all modified files
 git add .
@@ -22,6 +25,7 @@ git add <file1> <file2>
 ```
 
 ### 3. Commit Changes
+
 ```bash
 # Create commit with descriptive message
 git commit -m "feat: add Mississippi SEO optimization
@@ -33,6 +37,7 @@ git commit -m "feat: add Mississippi SEO optimization
 ```
 
 ### 4. Push to Feature Branch
+
 ```bash
 # Push to current branch
 git push origin HEAD
@@ -42,6 +47,7 @@ git push origin feature/seo-mississippi
 ```
 
 ### 5. Create Pull Request
+
 ```bash
 # Create PR using GitHub CLI (if available)
 gh pr create --title "SEO Optimization for Mississippi Market" \
@@ -67,21 +73,46 @@ gh pr create --title "SEO Optimization for Mississippi Market" \
 ```
 
 ### 6. PR Review and Merge
+
 ```bash
 # Check PR status
 gh pr view
 
-# Merge PR (after approval)
-gh pr merge
+# Wait for PR approval and CI checks to pass
+# Then merge PR to master branch
+gh pr merge --merge --delete-branch
+
+# Alternative: Squash and merge (recommended for cleaner history)
+gh pr merge --squash --delete-branch
+
+# Or merge manually through GitHub interface
+```
+
+### 7. Post-Merge Cleanup
+
+```bash
+# Switch back to master branch
+git checkout master
+
+# Pull latest changes
+git pull origin master
+
+# Delete local feature branch (if not auto-deleted)
+git branch -d feature/your-branch-name
+
+# Verify merge was successful
+git log --oneline -5
 ```
 
 ## Branch Naming Convention
+
 - `feature/[description]` - for new features
 - `fix/[description]` - for bug fixes
 - `docs/[description]` - for documentation updates
 - `seo/[description]` - for SEO-related changes
 
 ## Commit Message Format
+
 ```
 type: description
 
@@ -100,6 +131,7 @@ Types:
 - `chore:` - maintenance
 
 ## Quality Checks
+
 - [ ] All tests pass
 - [ ] Linting passes
 - [ ] No console errors
@@ -141,4 +173,12 @@ echo "🔄 Creating pull request..."
 gh pr create --title "SEO Optimization for Mississippi Market" \
              --body "Comprehensive SEO updates for Mississippi market targeting"
 
-echo "✅ Workflow complete! PR created and ready for review."
+echo "⏳ Waiting for PR approval and CI checks..."
+echo "After approval, run: gh pr merge --squash --delete-branch"
+
+# Post-merge cleanup
+echo "🧹 Switching to master and cleaning up..."
+git checkout master
+git pull origin master
+
+echo "✅ Workflow complete! Changes merged to master branch."
