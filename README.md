@@ -10,7 +10,7 @@ All content ideas, elements, structure, and implementation are licensed under th
 4. Projects
 5. Contact
 6. Interface Design Concept ERAU
-7. A Fisherman's Life Project Website
+7. A Missionary's Life Project
 8. Press
 9. Imprint
 10. Privacy Policy
