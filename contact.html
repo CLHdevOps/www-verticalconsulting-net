@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8XPX5S2CG9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8XPX5S2CG9');
+</script>
 <meta charset="utf-8">
 <title>Contact | IT Consulting Mississippi | Vertical Consulting LLC</title>
 <meta name="description" content="Contact Vertical Consulting LLC for IT consulting services in Mississippi. AI consulting Jackson MS, digital transformation, and SEO services near me.">
@@ -99,7 +108,7 @@
 					<p class="body-ff-h2">Vertical Consulting LLC</p>
 					<br>
 					<p><a href="tel:601-506-8818" class="bg-light-link">(601) 506-8818</a></p>
-					<p class="address"><a href="mailto:corey@5hughes.com" class="bg-light-link">corey@5hughes.com</a></p>
+					<p class="address"><a href="mailto:corey@verticalconsulting.net" class="bg-light-link">corey@verticalconsulting.net</a></p>
 					<p class="address">Brandon, MS 39042</p>
 				</div>
 				<hr>
@@ -107,7 +116,7 @@
 					<div class="container--align">
 						<div class="container--child">
 							<i class="fa-brands fa-linkedin fa-swamp reveal" onclick="window.location.href='https://www.linkedin.com/in/coreyhughes-leader/'"></i>
-							<i class="fa-solid fa-envelope fa-swamp reveal" onclick="window.location.href='mailto:corey@5hughes.com'"></i>
+							<i class="fa-solid fa-envelope fa-swamp reveal" onclick="window.location.href='mailto:corey@verticalconsulting.net'"></i>
 							<i class="fa-solid fa-phone fa-swamp reveal" onclick="window.location.href='tel:601-506-8818'"></i>
 						</div>
 					</div>
@@ -145,5 +154,65 @@
 		</p>
 	</footer>
 	<script src="script.js"></script>
+
+	<!-- Conversion tracking: Google Ads & Facebook Pixel placeholders -->
+	<!-- Google Ads conversion (replace AW-CONVERSION_ID/CONVERSION_LABEL) -->
+	<script>
+		/* Google Ads conversion snippet (page event). Replace with your AW-CONVERSION_ID */
+		function sendGoogleAdsConversion() {
+		  if (typeof gtag === 'function') {
+			gtag('event', 'conversion', {
+			  'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+			  'event_callback': function() {
+				console.log('Google Ads conversion event sent');
+			  }
+			});
+		  } else {
+			console.log('gtag not available for Google Ads conversion');
+		  }
+		}
+	</script>
+
+	<!-- Facebook Pixel base (replace YOUR_PIXEL_ID) -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		try{
+		  fbq('init', 'YOUR_PIXEL_ID');
+		  fbq('consent', 'grant'); // optional: indicate consent given
+		}catch(e){console.warn('FB Pixel init failed', e)}
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+		src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID&ev=PageView&noscript=1"
+	/></noscript>
+
+	<!-- Fire conversion events on Netlify form submit -->
+	<script>
+		(function () {
+		  var form = document.querySelector('form[name="Contact"]');
+		  if (!form) return;
+
+		  form.addEventListener('submit', function (e) {
+			// Pet the Netlify form normally — events will fire after submission attempt
+			// Send Google Ads conversion
+			sendGoogleAdsConversion();
+
+			// Send Facebook Pixel conversion event (Lead)
+			if (typeof fbq === 'function') {
+			  try { fbq('track', 'Lead'); } catch(err) { console.warn('fbq track failed', err); }
+			} else {
+			  console.log('fbq not available');
+			}
+		  }, false);
+
+		})();
+	</script>
+
 </body>
 </html>

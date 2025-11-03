@@ -2,7 +2,7 @@
   "permissions": {
     "allow": [
       "Read(//c/Users/ogDevOps/Downloads/**)",
-      "Bash(for file in projects-ai-chatsolution.html projects-a-nonprofit-missionary-fundraising.html projects-a-fishermans-life.html)",
+      "Bash(for file in projects-ai-chatsolution.html projects-a-nonprofit-missionary-fundraising.html projects-a-missionary-website.html)",
       "Bash(do echo \"=== $file ===\")",
       "Bash(head:*)",
       "Bash(done)",

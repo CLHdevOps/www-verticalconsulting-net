@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.verticalconsulting.net/sitemap.xml
+Host: https://www.verticalconsulting.net
