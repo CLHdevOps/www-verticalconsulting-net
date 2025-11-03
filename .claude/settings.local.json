@@ -5,7 +5,9 @@
       "Bash(for file in projects-ai-chatsolution.html projects-a-nonprofit-missionary-fundraising.html projects-a-fishermans-life.html)",
       "Bash(do echo \"=== $file ===\")",
       "Bash(head:*)",
-      "Bash(done)"
+      "Bash(done)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nfix: correct branding inconsistencies and update copyright year\n\n- Fixed company name in project page footers from \"Vertical Consulting Group, LLC\" to \"Vertical Consulting LLC\"\n- Fixed logo alt text in project page headers from \"Vertical Consulting Group Logo\" to \"Vertical Consulting LLC Logo\"\n- Updated copyright year from 2024 to 2025 across all pages\n- Removed HTML syntax error in about.html (stray ''html'' text on line 82)\n- Fixed double period typo in projects.html AI Chat Solution description\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
     ],
     "deny": [],
     "ask": []
