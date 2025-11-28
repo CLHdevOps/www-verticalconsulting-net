@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-D2R38TP374"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-D2R38TP374');
+</script>
+<meta charset="utf-8">
+<title>Demo Reminder Opt-In | IT Consulting Mississippi | Vertical Consulting LLC</title>
+<meta name="description" content="Sign up to receive SMS text message reminders for your demo appointment with Vertical Consulting LLC.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/vertical-v-only-logo.png" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz@8..144&family=Roboto+Serif:opsz,wght@8..144,700&family=Roboto&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/9ee1123c89.js" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar">
+			<img src="images/vertical-v-only-logo.png" height="55" width="55" alt="Vertical Consulting LLC Logo">
+			<ul class="nav-menu">
+				<li class="nav-item">
+					<a href="index.html" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="about.html" class="nav-link">About</a>
+				</li>
+				<li class="nav-item">
+					<a href="services.html" class="nav-link">Services</a>
+				</li>
+				<li class="nav-item">
+					<a href="projects.html" class="nav-link">Projects</a>
+				</li>
+				<li class="nav-item">
+					<a href="client-forms.html" class="nav-link">Client Forms</a>
+				</li>
+				<li class="nav-item">
+					<button class="button button1 navbutton1 nav-link" onclick="window.location.href='contact.html'">CONTACT</button>
+				</li>
+			</ul>
+			<div class="hamburger">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+		</nav>
+	</header>
+
+	<main>
+		<section class="bg-light">
+			<div class="container container--margin--short load-in">
+				<h1 class="heading-thin text-center">Demo Appointment SMS Reminders</h1>
+				<p class="text-center">Never miss your demo appointment! Sign up to receive text message reminders about your scheduled demo with Vertical Consulting LLC.</p>
+
+				<div class="reveal" style="max-width: 800px; margin: 2rem auto; padding: 1.5rem; background: var(--clr-accent-200); border-left: 4px solid var(--clr-primary-900);">
+					<h3 style="margin-top: 0;">What You'll Receive:</h3>
+					<ul style="margin-bottom: 0;">
+						<li>Confirmation text when your demo is scheduled</li>
+						<li>Reminder 24 hours before your appointment</li>
+						<li>Reminder 1 hour before your appointment</li>
+						<li>Follow-up messages with demo resources (if requested)</li>
+					</ul>
+				</div>
+
+				<form name="SMS-Optin" method="POST" action="sms-optin-thank-you.html" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
+					<p class="hidden">
+						<label>
+							Don't fill this out if you're human: <input name="bot-field" />
+						</label>
+					</p>
+					<div class="row input-container">
+						<div class="col-md-6 col-sm-12">
+							<div class="styled-input">
+								<input type="text" id="first_name" name="first_name" placeholder="Enter your first name" required />
+								<label for="first_name">First name&#42;</label>
+							</div>
+						</div>
+						<div class="col-md-6 col-sm-12">
+							<div class="styled-input" style="float:right;">
+								<input type="text" id="last_name" name="last_name" placeholder="Enter your last name" required />
+								<label for="last_name">Last name&#42;</label>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="styled-input wide">
+								<input type="tel" id="phone" name="phone" placeholder="(601) 555-1234" pattern="[0-9\s\(\)\-\+]+" required />
+								<label for="phone">Mobile Phone Number&#42;</label>
+							</div>
+						</div>
+						<div class="col-xs-12">
+							<div class="styled-input wide">
+								<input type="email" id="email" name="email" placeholder="your.email@example.com" required />
+								<label for="email">Email Address&#42;</label>
+							</div>
+						</div>
+
+						<!-- Consent Checkbox -->
+						<div class="col-xs-12" style="margin: 2rem 0;">
+							<div style="display: flex; align-items: flex-start; gap: 1rem;">
+								<input type="checkbox" id="consent" name="consent" value="yes" required style="margin-top: 0.3rem; width: 20px; height: 20px; flex-shrink: 0;">
+								<label for="consent" style="font-size: 0.95rem; line-height: 1.6; color: var(--clr-accent-400);">
+									<strong>I consent to receive SMS text messages</strong> from Vertical Consulting LLC at the phone number provided above. I understand that:
+									<ul style="margin: 0.5rem 0 0 1.5rem;">
+										<li>Message frequency varies based on scheduled appointments</li>
+										<li>Message and data rates may apply</li>
+										<li>I can opt-out at any time by replying STOP</li>
+										<li>I can get help by replying HELP</li>
+										<li>My consent is not a condition of purchase</li>
+									</ul>
+								</label>
+							</div>
+						</div>
+
+						<div class="col-xs-12">
+							<input type="submit" value="Sign Me Up for SMS Reminders" name="submit" id="submit" class="button button1">
+						</div>
+						<div data-netlify-recaptcha="true"></div>
+					</div>
+				</form>
+
+				<hr>
+
+				<div class="reveal" style="max-width: 800px; margin: 2rem auto; padding: 1.5rem; background: var(--clr-accent-200);">
+					<h3>Privacy & Compliance Information</h3>
+					<p><strong>Your Privacy Matters:</strong> Your phone number will only be used to send appointment reminders and demo-related messages. We will never sell or share your information with third parties.</p>
+
+					<p><strong>How to Opt-Out:</strong> You can stop receiving messages at any time by:</p>
+					<ul>
+						<li>Replying <strong>STOP</strong> to any message</li>
+						<li>Contacting us at <a href="mailto:corey@verticalconsulting.net" class="bg-light-link">corey@verticalconsulting.net</a></li>
+						<li>Calling us at <a href="tel:601-506-8818" class="bg-light-link">(601) 506-8818</a></li>
+					</ul>
+
+					<p><strong>Questions?</strong> For help or support, reply <strong>HELP</strong> to any message or contact us using the information above.</p>
+
+					<p style="margin-bottom: 0;"><strong>Compliance:</strong> By providing your phone number and consent, you agree to receive SMS messages in accordance with the <a href="privacy.html" class="bg-light-link">Privacy Policy</a> and TCPA regulations.</p>
+				</div>
+
+				<hr>
+
+				<div class="input-container reveal text-center">
+					<p class="body-ff-h2">Vertical Consulting LLC</p>
+					<br>
+					<p><a href="tel:601-506-8818" class="bg-light-link">(601) 506-8818</a></p>
+					<p class="address"><a href="mailto:corey@verticalconsulting.net" class="bg-light-link">corey@verticalconsulting.net</a></p>
+					<p class="address">Brandon, MS 39042</p>
+				</div>
+			</div>
+		</section>
+
+	</main>
+	<footer>
+		<ul>
+			<li>
+				<a href="contact.html">Contact</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="press.html">Press</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="imprint.html">Imprint</a>
+			</li>
+			<li>
+				<p>&#124;</p>
+			</li>
+			<li>
+				<a href="privacy.html">Privacy Policy</a>
+			</li>
+		</ul>
+		<p class="copyright">
+			Copyright &copy; 2024 Vertical Consulting LLC
+		</p>
+	</footer>
+	<script src="script.js"></script>
+
+	<!-- Conversion tracking for SMS opt-ins -->
+	<script>
+		(function () {
+		  var form = document.querySelector('form[name="SMS-Optin"]');
+		  if (!form) return;
+
+		  form.addEventListener('submit', function (e) {
+			// Send Google Ads conversion
+			if (typeof gtag === 'function') {
+			  gtag('event', 'conversion', {
+				'send_to': 'AW-CONVERSION_ID/SMS_OPTIN_LABEL',
+				'event_callback': function() {
+				  console.log('SMS opt-in conversion event sent');
+				}
+			  });
+			}
+
+			// Send Facebook Pixel conversion event
+			if (typeof fbq === 'function') {
+			  try {
+				fbq('track', 'Lead', {
+				  content_name: 'SMS Demo Reminder Opt-In'
+				});
+			  } catch(err) {
+				console.warn('fbq track failed', err);
+			  }
+			}
+		  }, false);
+
+		})();
+	</script>
+
+</body>
+</html>
