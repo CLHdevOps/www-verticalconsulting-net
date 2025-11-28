@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is the Vertical Consulting LLC website - a static business website built with Jekyll, featuring professional consulting services, project portfolio, and contact information. The site is deployed on Netlify at https://www.verticalconsulting.net.
+This is the Five hughes LLC dba Vertical Consulting website - a static business website built with Jekyll, featuring professional consulting services, project portfolio, and contact information. The site is deployed on Netlify at https://www.verticalconsulting.net.
 
 ## Technology Stack
 
@@ -107,7 +107,7 @@ CSS is centralized in `style.css` using a custom properties (CSS variables) appr
 ### Jekyll Configuration
 
 Site metadata in `_config.yml`:
-- Title: Vertical Consulting LLC
+- Title: Five hughes LLC dba Vertical Consulting
 - Email: corey@5hughes.com
 - URL: https://www.verticalconsulting.net
 - Markdown: kramdown
